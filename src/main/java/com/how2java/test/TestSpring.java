@@ -5,7 +5,7 @@ import com.how2java.service.ProductService;
 public class TestSpring {
     public static void main(String[] args){
         ApplicationContext context=new ClassPathXmlApplicationContext(new String[] {"applicationContext.xml"});
-        ProductService s=(ProductService) context.getBean("ps");
-        s.doSomeService();
+        ProductService ps=(ProductService) context.getBean("s");
+        ps.doSomeService();
     }
 }
