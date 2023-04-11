@@ -4,7 +4,14 @@
   <groupId>org.example</groupId>
   <artifactId>Spring</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>Archetype - Spring</name>
+    <dependencies>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>Spring</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    <name>Archetype - Spring</name>
   <url>http://maven.apache.org</url>
 
 </project>
