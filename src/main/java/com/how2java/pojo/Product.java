@@ -2,12 +2,14 @@ package com.how2java.pojo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import javax.annotation.Resource;
 
-//@Component("p")
+@Component("p")
 public class Product {
     private int id;
-    private String name;
+    private String name="product1";
     @Autowired
+//    @Resource(name="c")
     private Category category;
     public int getId(){
         return id;
@@ -24,6 +26,7 @@ public class Product {
     public Category getCategory(){
         return category;
     }
+//    @Autowired
     public void setCategory(Category category){
         this.category=category;
     }

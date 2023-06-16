@@ -15,5 +15,6 @@ public class TestSpring2 {
     @Test
     public void test(){
         System.out.println(c.getName());
+        System.out.println(c.getId());
     }
 }
